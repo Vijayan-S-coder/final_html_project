@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+  </head>
+  <body>
+    <h1>Course Registration form</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal details</legend>
+        <table cellpadding="4px">
+          <tr>
+            <td>
+              <label for="firstname"> First Name </label>
+            </td>
+            <td>
+              <input type="text" name="firstname" id="firstname" placeholder="Jackie" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="surname"> SurName </label>
+            </td>
+            <td>
+              <input type="text" name="surname" id="surname" placeholder="Chan"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mobilenumber"> Mobile Number </label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                name="mobilenumber"
+                id="mobilenumber"
+                placeholder="9867543547"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"> e-mail </label>
+            </td>
+            <td>
+              <input type="email" name="email" id="email" placeholder="jackiechan123@gmail.com"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password"> Password </label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="minimum 8 characters"
+                minlength="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="confirm_password"> confirm Password </label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                required
+                placeholder="minimum 8 characters"
+                minlength="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="DOB"> Date of Birth </label>
+            </td>
+            <td>
+              <input type="date" name="DOB" id="DOB" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="age">Age</label>
+            </td>
+            <td>
+              <input type="number" name="age" id="age" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              <!-- gender  -->
+              <input type="radio" name="gender" id="gender" />
+              <label for="gender">MALE</label>
+              <input type="radio" name="gender" id="gender" />
+              <label for="gender">FEMALE</label>
+              <input type="radio" name="gender" id="gender" />
+              <label for="gender">OTHERS</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="country">country</label>
+            </td>
+            <td>
+              <select name="country" id="country">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="RUSSIA">RUSSIA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="picture">Upload your picture </label>
+            </td>
+            <td>
+              <input type="file" name="picture" id="picture" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" />
+            </td>
+            <td>
+              <input type="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Course details</legend>
+        <select name="course" id="course">
+          <option value="Java_Full_Stack">Java Full Stack</option>
+          <option value="DSA">DSA</option>
+          <option value="AI">AI</option>
+          <option value="Data Science">Data Science</option></select
+        ><br />
+        <label for="delivery_mode"> Delivery mode </label>
+        <input
+          type="radio"
+          name="delivery_mode"
+          id="delivery_mode"
+          value="ONLINE"
+        />
+        <label for="ONLINE">ONLINE</label>
+        <input
+          type="radio"
+          name="delivery_mode"
+          value="OFFLINE"
+          id="delivery_mode"
+        />
+        <label for="OFFLINE">OFFLINE</label><br /><br />
+        <label for="Institute_name">INSTITUTE NAME</label>
+        <input
+          type="text"
+          id="Institute_name"
+          name="Institute_name"
+          value="TAP ACADEMY"
+          readonly
+        />
+        <br /><br />
+        <label for="coding_knowledge">
+          Choose your present Coding Challenge Knowledge </label
+        ><br />
+        <input type="range" min="1" max="5" />
+        <br />
+        <label for="comments"> comments </label><br />
+        <textarea name="comments" id="comments" rows="10" cols="70"></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
